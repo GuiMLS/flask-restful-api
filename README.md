@@ -19,7 +19,7 @@ These tables were created as classes and can be seen in the models.py file.
 
 ## 💻 Application Requirements
 
-The operations, or actions that each hierarchy role can do is explained in the table below:
+The operations, or actions that each hierarchy role can do are explained in the table below:
 
 |  Element/Role | ADMIN   | USER  |
 | ------------ | ------------ | ------------ |
@@ -34,7 +34,7 @@ Constraints:
 
 ## 🚀 Installation
 
-To install this application, it is necessary to have Docker Compose. If you don't have it, it's recommended to follow the official Docker installation tutorial page: `https://docs.docker.com/engine/install/`. Once you have Docker Compose, open your terminal on the same folder you have cloned this repository and run the following command on it to install the Flask Restful API:
+To install this application, it is necessary to have Docker Compose. If you don't have it, it's recommended to follow Docker's official installation tutorial on this page: `https://docs.docker.com/engine/install/`. Once you have Docker Compose, open your terminal on the same folder you have cloned this repository and run the following command on it to install the Flask Restful API:
 ```
 docker-compose up
 ```
