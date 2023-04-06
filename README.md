@@ -117,6 +117,6 @@ To ease the installation and interoperability of this application, two main elem
 
 To all the people from Habit who gave me the opportunity to be challenged and learn a lot in this journey!
 
-## 📝 Licença
+## 📝 License
 
 This project is licensed under the MIT License.
