@@ -50,7 +50,7 @@ The Routes were designed considering the operations requirements so that it coul
 - :tw-1f3af: ManageApps class and the "/app/" route
 - :tw-1f3af: SpecificApp class and the "/app/< name >" route
 
-###ManageUsers
+#### ManageUsers
 >Methods: GET, POST and DELETE.
 
 This class can show (GET), create (POST) and delete (DELETE) users. According to the table above, it limits the User Role to Create New users, but it can still read and delete itself.
@@ -69,7 +69,7 @@ To delete an existing user, it is necessary to send a DELETE request having a JS
 ###Tests
 The testing of this route can be done using the Postman JSON file of this repository, and it consists of a GET method designed to show the registered users for both roles (user and admin). It is also possible to test the POST method by adding a new user using a pre-built customizable JSON Body, where the tester can try to create a new user having the right credentials and not having it, test some secure rules, such as not creating two users with the same login and typing wrong parameters. It also has a DELETE route, designed to give the admin role the power to delete any user and the user to delete itself only. It can also be tested using Postman to, for example, try to delete an unknow user or trying to do it with the wrong credentials.
 
-####ManageApps
+#### ManageApps
 >Methods: GET and POST.
 
 This class can show all Apps (GET) and create new apps (POST). According to the table above, only the admin can create or see the apps.
@@ -83,10 +83,10 @@ To create a new app, it is necessary to send a POST request to the /app/ route h
 The context is the login of the user who is related to the app.
 ```
 
-###Tests
+##### Tests
 It is possible to test this route with Postman too and it consists of a GET method designed to show all the Apps and a POST method designed to create new apps. It is possible to test the limits of the visualization of the Apps for users with the 'user' role and to see create new apps.
 
-###ManageMessages
+#### ManageMessages
 >Methods: GET, POST and DELETE.
 
 This class can show only the Messages related to the users and all the Messages if the requester is an admin. This operation is made through a GET method and also implements a concept of relations between the users, as they are able to send messages each other. It is also possible, only for the user role, to send messages to all the registered users on this application using the POST method. The messages can also be deleted by an admin.
@@ -102,10 +102,10 @@ to_user is the recipient of the message.
 ```
 To delete a message, it is only necessary to send a DELETE request to the /messages/ route having the id of the message to be deleted in a JSON-body.
 ```
-###Tests
+##### Tests
 It is also possible to test this route with Postman. It provides some different points of view to do a same GET request. It is possible to do it as an admin and two different users. It is also possible to test the messaging rules and also viewing only the messages related to the user who requested it. It is also possible to delete messages using the DELETE method.
 
-###SpecificApp
+#### SpecificApp
 >Methods: GET.
 
 This class can show a information about a specific registered App. This can be done by sending a GET request to the /app/name route, where the field was designed to have the App name .
