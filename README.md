@@ -36,7 +36,7 @@ Constraints:
 
 To install this application, it is necessary to have Docker Compose. If you don't have it, it's recommended to follow the official Docker installation tutorial page: `https://docs.docker.com/engine/install/`. Once you have Docker Compose, open your terminal on the same folder you have cloned this repository and run the following command on it to install the Flask Restful API:
 ```
-<docker-compose up>
+docker-compose up
 ```
 ## ☕ Project Features
 
