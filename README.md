@@ -1,7 +1,5 @@
 # Flask Restful API
 
-<img src="https://play-lh.googleusercontent.com/keVVojxW-b11NTKWZg8GulfLlhqBpATvqGFViblYsI0fxW_8a0sIPgyRlB94Gu1AQMY" alt="Flask Library">
-
 > This project is a RESTful JSON API using Python3/Flask to manage multiple applications and perform operations in 2 different levels of client hierarchy (admin, user).
 
 ### Dependencies
@@ -12,9 +10,9 @@ This project relies on`<Python 3.11>`, having its backend based on`<Flask / flas
 
 The first point to discuss in this section is the chosen database technology: to keep this project lightweight and simple, it was decided to use the SQLite database. As this project has three main elements (Users, Applications and Messages), it was necessary to create three tables:
 
-- :tw-1f4c3: Apps
-- :tw-1f4c3: Messages
-- :tw-1f4c3: Users
+- Apps
+- Messages
+- Users
 
 These tables were created as classes and can be seen in the models.py file.
 
@@ -45,10 +43,10 @@ To install this application, it is necessary to have Docker Compose. If you don'
 ### API Routes
 The Routes were designed considering the operations requirements so that it could provide the necessary functions to each element. To achieve that, it was necessary to design 4 routes, with 4 main Management classes and its methods:
 
-- :tw-1f3af: ManageUsers class and the "/users/" route
-- :tw-1f3af: ManageMessages class and the "/messages/" route
-- :tw-1f3af: ManageApps class and the "/app/" route
-- :tw-1f3af: SpecificApp class and the "/app/< name >" route
+- ManageUsers class and the "/users/" route
+- ManageMessages class and the "/messages/" route
+- ManageApps class and the "/app/" route
+- SpecificApp class and the "/app/< name >" route
 
 #### ManageUsers
 >Methods: GET, POST and DELETE.
