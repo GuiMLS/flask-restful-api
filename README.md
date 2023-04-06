@@ -38,6 +38,8 @@ To install this application, it is necessary to have Docker Compose. If you don'
 ```
 docker-compose up
 ```
+The installation will begin and when it finish a 'Running on http://127.0.0.1:5000' message will prompt in the console screen, this means the API is up and running.
+
 ## ☕ Project Features
 
 ### API Routes
