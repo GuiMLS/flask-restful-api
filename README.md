@@ -1,11 +1,5 @@
 # Flask Restful API
 
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
-
 <img src="https://play-lh.googleusercontent.com/keVVojxW-b11NTKWZg8GulfLlhqBpATvqGFViblYsI0fxW_8a0sIPgyRlB94Gu1AQMY" alt="Flask Library">
 
 > This project is a RESTful JSON API using Python3/Flask to manage multiple applications and perform operations in 2 different levels of client hierarchy (admin, user).
@@ -56,7 +50,7 @@ The Routes were designed considering the operations requirements so that it coul
 - :tw-1f3af: ManageApps class and the "/app/" route
 - :tw-1f3af: SpecificApp class and the "/app/< name >" route
 
-####ManageUsers
+###ManageUsers
 >Methods: GET, POST and DELETE.
 
 This class can show (GET), create (POST) and delete (DELETE) users. According to the table above, it limits the User Role to Create New users, but it can still read and delete itself.
@@ -72,7 +66,7 @@ To create a new user, it is necessary to send a POST request to the route /users
 ```
 To delete an existing user, it is necessary to send a DELETE request having a JSON-body with the name of the user to be deleted to the route /users/.
 ```
-#####Tests
+###Tests
 The testing of this route can be done using the Postman JSON file of this repository, and it consists of a GET method designed to show the registered users for both roles (user and admin). It is also possible to test the POST method by adding a new user using a pre-built customizable JSON Body, where the tester can try to create a new user having the right credentials and not having it, test some secure rules, such as not creating two users with the same login and typing wrong parameters. It also has a DELETE route, designed to give the admin role the power to delete any user and the user to delete itself only. It can also be tested using Postman to, for example, try to delete an unknow user or trying to do it with the wrong credentials.
 
 ####ManageApps
@@ -89,10 +83,10 @@ To create a new app, it is necessary to send a POST request to the /app/ route h
 The context is the login of the user who is related to the app.
 ```
 
-#####Tests
+###Tests
 It is possible to test this route with Postman too and it consists of a GET method designed to show all the Apps and a POST method designed to create new apps. It is possible to test the limits of the visualization of the Apps for users with the 'user' role and to see create new apps.
 
-####ManageMessages
+###ManageMessages
 >Methods: GET, POST and DELETE.
 
 This class can show only the Messages related to the users and all the Messages if the requester is an admin. This operation is made through a GET method and also implements a concept of relations between the users, as they are able to send messages each other. It is also possible, only for the user role, to send messages to all the registered users on this application using the POST method. The messages can also be deleted by an admin.
@@ -108,10 +102,10 @@ to_user is the recipient of the message.
 ```
 To delete a message, it is only necessary to send a DELETE request to the /messages/ route having the id of the message to be deleted in a JSON-body.
 ```
-#####Tests
+###Tests
 It is also possible to test this route with Postman. It provides some different points of view to do a same GET request. It is possible to do it as an admin and two different users. It is also possible to test the messaging rules and also viewing only the messages related to the user who requested it. It is also possible to delete messages using the DELETE method.
 
-####SpecificApp
+###SpecificApp
 >Methods: GET.
 
 This class can show a information about a specific registered App. This can be done by sending a GET request to the /app/name route, where the field was designed to have the App name .
