@@ -50,6 +50,8 @@ The Routes were designed considering the operations requirements so that it coul
 - ManageApps class and the "/app/" route
 - SpecificApp class and the "/app/< name >" route
 
+This routes can be seen in the app.py file.
+
 #### ManageUsers
 >Methods: GET, POST and DELETE.
 
@@ -110,7 +112,7 @@ It is also possible to test this route with Postman. It provides some different 
 
 This class can show a information about a specific registered App. This can be done by sending a GET request to the /app/name route, where the field was designed to have the App name .
 
-To provide a safe way of using this application, according to the first Constraint, it was also necessary to implement authentication in every route.
+To provide a safe way of using this application, according to the first Constraint, it was also necessary to implement authentication in all the routes.
 
 ### Docker Container and Compose
 To ease the installation and interoperability of this application, two main elements was designed: a Dockerfile, to build a docker image from the scripts, and a Docker Compose file, to make it able to be installed with 1 command line. These files can be downloaded from this repository.
