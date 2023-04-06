@@ -64,7 +64,7 @@ To create a new user, it is necessary to send a POST request to the route /users
 ```
 To delete an existing user, it is necessary to send a DELETE request having a JSON-body with the name of the user to be deleted to the route /users/.
 ```
-###Tests
+##### Tests
 The testing of this route can be done using the Postman JSON file of this repository, and it consists of a GET method designed to show the registered users for both roles (user and admin). It is also possible to test the POST method by adding a new user using a pre-built customizable JSON Body, where the tester can try to create a new user having the right credentials and not having it, test some secure rules, such as not creating two users with the same login and typing wrong parameters. It also has a DELETE route, designed to give the admin role the power to delete any user and the user to delete itself only. It can also be tested using Postman to, for example, try to delete an unknow user or trying to do it with the wrong credentials.
 
 #### ManageApps
